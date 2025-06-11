@@ -13,12 +13,7 @@ export FAILURE_LIMIT=3
 # Dry-run mode (simulate without real restart)
 python3 nginx_monitor.py --dry-run
 
-# Live mode (real remediation)
+# Live mode (real)
 python3 nginx_monitor.py
 
 
-
-set -a
-source .env
-set +a
-python3 nginx_monitor.py
